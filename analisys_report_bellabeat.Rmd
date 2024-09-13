@@ -1,0 +1,70 @@
+---
+title: "Bellabeat"
+author: "Ricardo Martínez"
+date: "2024-09-10"
+output: html_document
+---
+
+# **Sobre la empresa.**
+
+Bellabeat es una empresa de alta tecnología que fabrica distintos productos inteligentes de alta tecnología, los cuales recopilan datos sobre actividad física, el sueño, el estrés y la salud reproductiva para proporcionar a las mujeres comocimientos sobre su salud personal y sus hábitos. Esta empresa fue fundada por Urška Sršen, quien también es directora creativa y el matemático Sando Mur.
+
+## **Fases del análisis**
+
+### *Preguntar*
+
+-   **Business Task:** Identificar y aprovechar las tendencias de los datos de dispositivos inteligentes que no son de Bellabeat para mejorar las estrategias de marketing.
+
+-   **Stakeholders o Interesados en el proyecto**
+
+    1.  Urška Sršen Y Sando Mur, los cofundadores.
+    2.  Equipo de análisis computacional de datos de marketing de Bellabeat
+
+### *Preparar.*
+
+1.  **Datos utilizados.**: El conjunto de datos con el que se realizó el análisis fue obtenido de Kaggle, y puede consultarse en [FitBit Fitness Tracker Data](https://www.kaggle.com/datdasets/arashnic/fitbit/data). Este conjunto esta disponible gracias a [Möbius](https://www.kaggle.com/arashnic)
+
+2.  **Accesibilidad y privacidad.**: Los datos son de dominio público.
+
+3.  **Detalles del conjunto de datos**: Este conjunto de datos fue generado por encuestados a través de una encuesta distribuida mediante Amazon Mechanical Turk entre el 03.12.2016 y el 05.12.2016. Treinta usuarios elegibles de FitBit dieron su consentimiento para proporcionar datos personales de seguimiento, incluyendo resultados a nivel de minutos para la actividad física, la frecuencia cardíaca y el monitoreo del sueño.
+
+4.  **Organización de los datos**: El conjunto de datos de FitBit consiste de 11 tablas los cuales son archivos de tipo csv (comma separated values), dos tablas están en formato ancho y las demás en formato largo. Además, las tablas presentan distintos formatos de tiempo (segundos, minutos, horas) y están indicados en los nombre de las tablas, en caso de tenerlo. Por último, este conjunto de datos está enfocado en datos de ritmo cardiaco, cuenta de pasos, calorias, etc., y mediante una visualización rápida se puede observar que los datos pasaron mediante un tratamiento el cual tiene algunas inconsistencias que se pueden corregir.
+
+5.  **Credibilidad de los datos.**: Dado la limitación de contar unicamente con una muestra de treinta usuarios, cuyo sexo es desconocido y el hecho de no contar con información de la empresa, esto podría generar sesgos de muestreo. Otro problema que se puede encontrar es que los datos no son actuales, son del año 2016. Además, pese a que el registro son obtenidos de 30 usuarios, se encontro que las tablas de datos contaban con mas o incluso menos de treinta usuarios.
+
+### *Procesar*
+
+-   **Herramientas** Se utilizó el lenguaje de programación R para verificar la integridad de los datos, editar informaciones inconsistentes, limpiar los datos (en caso de ser necesario) y realizar el análisis.
+
+-   **Tablas de datos utilizados**. No se utilizó todas las tablas, ya que otras tablas contienen información similar a otras pero medidos en intervalos de tiempo distintos. Las tablas utilizadas son las siguientes:
+
+    1.  dailyActivity_merged.csv
+    2.  hourlyCalories_merged.csv
+    3.  hourlyIntensities_merged.csv
+    4.  minuteSleep_merged.csv
+    5.  hourlySteps_merged.csv
+
+
+- **Previsualizando algunas tablas**
+
+    ```{r echo=TRUE}
+      daily_activity <- read.csv("datasets/dailyActivity_merged.csv")
+      head(daily_activity, 3)
+    ```
+
+    ```{r echo=TRUE}
+      hourly_intensities <-  read.csv("./datasets/hourlyIntensities_merged.csv")
+      head(hourly_intensities, 3)
+    ```
+    
+    
+    ```{r echo=TRUE}
+      minute_sleep <- read.csv("./datasets/minuteSleep_merged.csv") 
+      head(minute_sleep, 3)
+    ```
+    
+    
+    Observaciones:
+
+    1.  Los nombres de las tablas no son completamente consistentes, ya que al final contiene la palabra "merged" y esto no aporta al análisis.
+    2.  Los nombres de las columnas no son
