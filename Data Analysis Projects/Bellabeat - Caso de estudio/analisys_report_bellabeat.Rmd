@@ -147,9 +147,9 @@ Bellabeat es una empresa de alta tecnología que fabrica distintos productos int
 
     Por otro lado, para la tabla *heartrate_seconds* se le realizaron las siguientes operaciones
 
-    1.  Se creo una tabla el cual resume el promedio del ritmo cardiaco por hora. 
+    1.  Se creo una tabla el cual resume el promedio del ritmo cardiaco por hora.
     2.  A esta nueva tabla se le unio la otra tabla que resume la intensidad, pasos y calorias por hora. Además, se filtra aquellas filas cuya intensidad es cero, pues esto indica que el usuario está dormido o bien, no está realizando alguna actividad.
-    3.  Se crea una nueva columna el cual clasifica cada fila de la tabla de acuerdo al tipo de intensidad: *Low*, si la intensidad está debajo del promedio; 'Normal', si la intensidad es mayor o igual al promedio y menor o igual a 60; y 'High', si la intensidad es mayor   
+    3.  Se crea una nueva columna el cual clasifica cada fila de la tabla de acuerdo al tipo de intensidad: *Low*, si la intensidad está debajo del promedio; 'Normal', si la intensidad es mayor o igual al promedio y menor o igual a 60; y 'High', si la intensidad es mayor
 
     El código de lo mencionado anteriormente es el siguiente:
 
@@ -157,7 +157,7 @@ Bellabeat es una empresa de alta tecnología que fabrica distintos productos int
 
     # Summarise average heart rate per hour
       mean_intensity <- mean(merge_hourly$total_intensity[merge_hourly$total_intensity > 0], na.rm = TRUE)
-    
+
     merge_heart_rate <-  hourly_heart_rate %>%  
       inner_join(merge_hourly, by = c("id", "date", "time")) %>%
       filter(average_intensity > 0) %>% 
@@ -217,19 +217,19 @@ Destacamos lo siguiente:
 
 -   Se puede observar que en toda la semana hay una concentración de usuarios que llegan a pasar más de 10 horas de sedentarismo, siendo los Lunes, Viernes y Domingos los más considerables.
 
-### 4. Frecuencia cardiaca y calorias quemadas.
+#### 4. Frecuencia cardiaca y calorias quemadas.
 
 ![](plots/calories_heartrate)
 
 Destacamos lo siguiente:
 
 -   Los usuarios que registraron una baja intensidad están mayormente concentrado en frecuencias cardiacas entre 50 a 100 bpm, y llgar a quemar más de 75 calorias.
+
 -   Los usuarios que registraron una intensidad moderada, muestra una ligera concetración en frecuencias cardiacas entre 50 a 199 bpm, y llegar a quemar más de 150 calorias.
+
 -   Para los usuarios que registraron una intensidad fuerte, los datos no tienden a estar concetrados en un intervalo específico. Por otro lado, vemos como hay usuarios que quemaron una cantidad fuerte alta de calorias pero con frecuencia cardiaca menor a 100 bpm
 
-- No hay relación fuerte entre la frecuencia cardiaca y las calorias quemadas, pues esto indica que hay usuarios que tienen una frecuencia alta y poca intesidad de actividad, o bien, una frecuencia baja y una actividad moderada
-
-
+-   No hay relación fuerte entre la frecuencia cardiaca y las calorias quemadas, pues esto indica que hay usuarios que tienen una frecuencia alta y poca intesidad de actividad, o bien, una frecuencia baja y una actividad moderada
 
 # Conclusiones (actuar).
 
@@ -241,8 +241,6 @@ A partir de los datos analizados de Fitbit, podemos implementar las siguientes e
 
 -   **Sistema de objetivos y rencompesas**: Para la aplicación de Bellabeat, se podría agregar una función que muestre una lista de objetivos por cumplir, ya sean diarios, semanales o mensuales, e incluso personalizados, de acuerdo a las necesidades del usuario. Estos objetivos pueden incluir: dar más de 5000 pasos diarios, quemar más de 200 calorías, o tener menos de 12 horas de sedentarismo al día, por dar un ejemplo. Las recompensas se obtendrían al cumplir los objetivos, y estas podrían ser: descuentos en la membresía Bellabeat, descuentos en productos Bellabeat, o incluso la posibilidad de ganar uno de manera gratuita.
 
-- **Alertas de emergencia**. Actualmente, el dispositivo Leaf se conecta con la aplicación de Bellabeat para realizar un seguimiento de la actividad física, el sueño y el estrés. La alerta de emergencia tendría como función alertar al usuario sobre anomalías en su frecuencia cardíaca.
+-   **Alertas de emergencia**. Actualmente, el dispositivo Leaf se conecta con la aplicación de Bellabeat para realizar un seguimiento de la actividad física, el sueño y el estrés. La alerta de emergencia tendría como función alertar al usuario sobre anomalías en su frecuencia cardíaca.
 
-- **Predicción de sueño**: Para la aplicación de BellaBeat se podria agregar una función que prediga la calidad de sueño del usuario a partir de la actividad fisica realizada durante el dia, o bien, dar una recomendación sobre cuanta actividad física le falta al usuario para que pueda dormir saludablemente.
-
-
+-   **Predicción de sueño**: Para la aplicación de BellaBeat se podria agregar una función que prediga la calidad de sueño del usuario a partir de la actividad fisica realizada durante el dia, o bien, dar una recomendación sobre cuanta actividad física le falta al usuario para que pueda dormir saludablemente.
