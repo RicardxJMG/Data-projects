@@ -138,13 +138,17 @@ Las operaciones que se le realizaron a la tabla `all_trips_table` fueron:
 
 #### 3.3.1 **Agregado columnas**.
 
-Se agregaron nuevas columnas a partir de la columna `started_at` y `ended_at`. Adicionalmente se agrego una columna llamada `ride_length` que indica la duración del servicio en minutos.
+Se agregaron nuevas columnas a partir de la columna `started_at` y `ended_at`, los cuales indican la fecha de inicio de viaje, el dia de inicio de viaje (por nombre y número) y la fecha del fin del viaje.
+
+Adicionalmente se agregó una columna llamada `ride_length` el cual indica la duración del servicio en minutos.
 #### 3.3.2 **Agregando datos faltantes**.
 
 En las columnas `start_station_name` y `end_station_name` se encontraron nombre vacíos, estos valores fueron llenados por el valor `unknown station`.
-#### 3.3.3 **Limpieza de datos nulos, duplicados y columnas**.
+#### 3.3.3 **Limpieza de datos.
 
 Al revisar la tabla, no se encontraron elementos repetidos ni elementos nulos. Además, se eliminaron las columnas que describen latitud y longitud de las estaciones de inicio y de termino.
+
+También, se han eliminado aquellos viajes que iniciaron y terminaron en días distintos, ya que buscamos concentrarnos en el uso común del servicio.
 #### 3.3.4 **Limitando valores de `ride_length`**.
 
 Después de haber creado esta columna es posible encontrar algunas inconsistencias. Primero, se encontraron valores negativos e iguales a cero los cuales representan al rededor del 0.01% de los datos, estos datos fueron eliminado. La distribución de valores que puede tomar esta variable es la siguiente:
@@ -153,64 +157,81 @@ Después de haber creado esta columna es posible encontrar algunas inconsistenci
 
 Es evidente la presencia de outliers. Al revisar las estadísticas descriptivas de esta columna tenemos:
 
-|  Mean   | Median |  Mode  |
-| :-----: | :----: | :----: |
-| 1039.15 | 583.00 | 300.00 |
+|     Mean      |    Median    |     Mode     |
+| :-----------: | :----------: | :----------: |
+| 17.31 minutos | 9.72 minutos | 4.87 minutos |
 Como se puede observar, hay una diferencia significativa entre estos valores.
 
-Por lo tanto, se ha decidido limitar el rango de valores que puede tomar esta variable. La forma en que se van a limitar los valores es tomando aquellos viajes que sean mayores a tres minutos y que sean menores a 1440 minutos, es decir, un día. La distribución de los valores que puede tomar esta variable se puede ver en el siguiente gráfico:
-
+Por lo tanto, se ha decidido utilizar la técnica [IQR](https://en.wikipedia.org/wiki/Interquartile_range) para filtrar los outliers. Para esta técnica se realizó una ligera variación en la selección de $Q_1$, se tomó el valor $Q_1 = 1$. es decir, se descartaron aquellos viajes que duraron menos de un minuto. Al utilizar esta técnica nuestra distribución de los datos nos quedo de la siguiente forma
 
 ![|500](./plots/cyclistic_boxplot_2.png)
 
-Ahora, notamos que hay una mejor concentración de los datos. Las nuevas estadísticas descriptivas de esta columna son:
+Ahora, notamos una mejor distribución de los valores de la columna `ride_length`. 
 
-|  Mean  | Median |  Mode  |
-| :----: | :----: | :----: |
-| 567.49 | 500.00 | 300.00 |
+|     Mean      |    Median    |     Mode     |
+| :-----------: | :----------: | :----------: |
+| 11.19 minutos | 9.18 minutos | 4.87 minutos |
 
-El código de todo el proceso de limpieza puede consultarse en [data_cleaning.R](./data_cleaning.R)
+El código de todo el proceso de limpieza puede consultarse en [data_cleaning.R](./data_cleaning.R) 
+
+
+Después de haber realizado el proceso de limpieza nos hemos quedado con una tabla de 5,273,363 filas y 16 columnas
+
+---
 
 ## 4. Análisis
 
+Los siguientes gráficos son los hallazgos que se encontraron en los datos.
+### 4.1 Frecuencia de los usuarios
+
+![[cyclistic_analysis_plot_1.png.png|500]]
+
+> **Los usuarios *miembro* fueron los más abundantes durante el año 2024**
+
+## 4.2 Transporte favorito de los usuarios
+
+![[cyclistic_analysis_plot_2.png]]
+
+Encontramos lo siguiente
+
+> 1. **Las *bicicletas eléctricas* fueron las más utilizadas tanto por los usuarios *casuales* y *miembros***
+> 2. **Las *bicicletas clásicas* son el segundo transporte más utilizado y la diferencia entre la primera no es alta.**
+> 3. **El *scooter* es el transporte menos usual de utilizar entre los dos tipos de usuarios**
+
+## 4.3 Resumen anual
+
+El siguiente gráfico está divido en tres paneles que representan:
+
+1. El porcentaje usuarios que utilizaron el servicio mensualmente.
+2. El conteo mensual de usuarios, indicando el mes con mayor número de usuarios activos
+3. El conteo diario de usuarios (líneas tenues), así como el promedio semanal de usuarios.  (líneas anchas) 
+
+
+![[cyclistic_analysis_plot_3.png|705]]
+
+De aqui podemos observar los siguiente:
+
+> 1. Distribución de usuarios por mes:
+> 	- **Los usuarios *miembros* representan la mayoría de los usuarios en todos los meses.**
+> 	- **Hay un incremento en la participación de los  usuarios *casuales* en los meses de marzo a septiembre, siendo septiembre donde alcanza su máxima participación.**
+> 2. Tendencia mensual del total de usuarios:
+> 	- **Tanto los usuarios casuales como los miembros presentan un incremento en los meses de febrero y septiembre, siendo septiembre el mes con el mayor número de usuarios de ambos tipos.** 
+> 	- **Hay una clara disminución en el número de usuarios activos durante los meses de octubre a enero, mostrando cómo los periodos otoño-invierno influyen en el uso del servicio.**
+> 3. Evolución diaria y promedio semanal:
+> 	- **Se observa una tendencia ascendente hasta mediados de año, con un mayor número de usuarios en verano.**
+> 	- **La fluctuación diaria sugiere un patrón de uso constante con variaciones semanales, probablemente más uso en días específicos como fines de semana o días festivos.**
+
+## 4.4 Tiempo medio del uso del servicio a lo largo del dia.
+
+El siguiente 
+
+![[cyclistic_analysis_plot_4.png|700]]
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![[cyclistic_analysis_plot_5.png]]
 
 
 
