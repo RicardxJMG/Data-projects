@@ -76,7 +76,7 @@ plot_2 <- frecuency_table[, .(total_users = sum(users_count)),
                                paste0(round(total_users / 1e3, 0), "K"))),
             position = position_dodge(width = 0.75), vjust = -0.5, size = 3.2) +
   scale_fill_manual(values = user_colors) + 
-  labs(title = "¿Qué tipo de transporte prefieren los usuarios?",
+  labs(title = "Conteo de usuarios segmentado por el tipo de transporte",
        subtitle = "Comparación entre los miembros y usuarios casuales en el uso de bicletas o scooters",
        caption = caption_description,
        fill = "Tipo de usuario") +
@@ -134,14 +134,14 @@ titles_size <- 9
 plot_3 <- percentage_month %>% 
   ggplot(aes(x = prop_users, y = month, fill = member_casual)) +
   geom_col(width = 0.75, show.legend = F) +
-  #  geom_text(aes(label = paste0(round(abs(prop_users),1), "%")),
-  #            position = position_stack(),  size = 3.1
-  #            ) +
+  geom_text(aes(label = paste0(round(abs(prop_users), 1), "%")),
+            size = 2.25,
+            hjust = ifelse(percentage_month$prop_users > 0, -.15, 1.15)) +
   scale_fill_manual(values = user_colors) +
-  scale_y_discrete(limits = rev(levels(percentage_month$month))) +  # revert the order fix the problem of order, thx deepseek
-  scale_x_continuous(labels = function(x) paste0(abs(x), "%"), limits = c(-55,100), breaks = c(-50,-25,0,25,50,75)) +  
-  labs(title = "Porcentaje mensual de usuarios",
-       caption = caption_description) + 
+  scale_y_discrete(limits = rev(levels(percentage_month$month))) +  # rwvert the order to "preserver" the original order
+  scale_x_continuous(labels = function(x) paste0(abs(x), "%"), 
+                     limits = c(-55,100), breaks = c(-50,-25,0,25,50,75)) +  
+  labs(title = "Porcentaje mensual de usuarios") + 
   ylab("") + xlab("") +
   theme_minimal_vgrid(font_size = titles_size) +
   theme(plot.title = element_text(hjust = 0.5),
@@ -174,7 +174,7 @@ plot_4 <- frecuency_table[, .(total_users = sum(users_count)),
 plot_5 <-total_daily %>% 
   ggplot(aes(x = started_date, y = daily_count, group = member_casual, colour = member_casual)) +
   geom_line(linewidth = .642, show.legend = F) +
-  geom_line(aes(x = started_date, y = mean_week_count), linewidth = 1.5, show.legend = T) +
+  geom_line(aes(x = started_date, y = mean_week_count), linewidth = 1.15, show.legend = T) +
   scale_colour_manual(values = user_colors,name = "Tipo de usuario" ) + 
   labs(
     title = "Evolución diaria y promedio semanal de usuarios"
@@ -185,8 +185,8 @@ plot_5 <-total_daily %>%
 
   
   
-(plot_3 + plot_4)/plot_5 + plot_annotation(
-  title = "¿Cómo ha sido el comportamiento de los usuarios durante el 2024?",
+plot_6 <- (plot_3 + plot_4)/plot_5 + plot_annotation(
+  title = "Comportamiento de los usuarios durante el 2024",
   caption = caption_description
 )
 
@@ -196,60 +196,54 @@ plot_5 <-total_daily %>%
 users_names <- c('miembro' = "Miembro", 'casual' = "Usuario Casual")
 
 
-ride_length_hour %>% 
+plot_7 <- ride_length_hour %>% 
 ggplot(aes(x = hour, y = median_length, group = Q, color = Q)) +
   geom_line(linewidth = 1.2) +
   geom_point() +
-  facet_wrap(member_casual~., labeller = as_labeller(users_names)) + 
-  scale_color_manual(values = c("#ffc107", "#454545", "#6fb98f", "#5fd3bc"), name = "Trimestre") +
+  facet_wrap(member_casual~., labeller = as_labeller(users_names), nrow = 2) + 
+  scale_color_manual(values = c("#ffc107", "#454545", "#6fb98f", "#8fe100"), name = "Trimestre") +
   labs(
-    title = "¿Cómo varia el tiempo medio de uso entre los usuarios casuales y miembros a lo largo el día?",
-    subtitle = "Comparación de los tiempos medios por trimestre para cada tipo de usuario",
+    title = "Evolución del tiempo medio de uso del servicio a lo largo del dia",
+    subtitle = "Comparación trimetral del tiempo de uso entre los usuarios casuales y miembros",
     caption = caption_description
   ) +
-  theme_minimal_hgrid(font_size = 10) +
+  theme_minimal_grid(font_size = 10) +
   theme_cyclistic + 
-  theme(axis.text.x = element_text(angle = 90, size = 8)) +
-  ylab("") + xlab("")
+  theme(axis.text.x = element_text(angle = 90/2, size = 7.5, vjust = -.05),
+        axis.text.y = element_text(size = 7.5),
+        strip.text = element_text(face = "bold", size = 10),
+        strip.background = element_rect(linetype = "solid", 
+                                        color = "#4e4e4e", linewidth = 0.5)) +
+  ylab("Tiempo medio de uso (mins)") + xlab("")
 
 
 
-ride_length_day %>% 
+plot_8 <- ride_length_day %>% 
   ggplot(aes(x = day_of_week, y = month, fill = median_length)) +
   geom_tile() + 
   scale_fill_gradient(high = "#d4ff41", low = "#003940" ) +
   scale_y_discrete(limits =  rev(levels(ride_length_day$month))) +
   facet_wrap(~member_casual,  labeller = as_labeller(users_names)) +
   labs(title = "¿Cómo varia el tiempo medio de uso a lo largo del año entre los usuarios?",
-       subtitle = "Variación mensual y semanal del tiempo medio de uso para usuarios casuales y miembros",
+       subtitle = "Variación mensual y semanal del tiempo medio de uso del servicio para usuarios casuales y miembros",
        caption = caption_description,
-       fill = "Tiempo medio (min)") +
-  theme_minimal_grid() +
-  theme(axis.text.x = element_text(angle = 90, size = 8, hjust = 0.25, vjust = -.1),
-        axis.text.y = element_text(size = 8),
-        strip.text.x = element_text(size = 11, face = "bold")) + 
+       fill = "Tiempo medio (mins)") +
+  theme_minimal_grid() +  theme_cyclistic +
+  theme(
+        axis.text.x = element_text(angle = 90, size = 9, hjust = 0.5, vjust = -.1),
+        axis.text.y = element_text(size = 9),
+        strip.text.x = element_text(size = 11, face = "bold"),
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size =7.5),
+        legend.title.position = "top",
+        legend.direction = "horizontal",
+        strip.text = element_text(face = "bold", size = 10),
+        strip.background = element_rect(linetype = "solid", 
+                                        color = "#4e4e4e", linewidth = 0.5)) +
   ylab("") + xlab("")
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# add in the readme the following  plots: 1,2,6,7,8
