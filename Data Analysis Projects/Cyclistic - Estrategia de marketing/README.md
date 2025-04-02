@@ -2,7 +2,7 @@
 
 ## Sobre la empresa
 
-Cyclistic es un programa de de **bicicletas compartidas** en Chicago que ha crecido desde 2016 hasta contar con 5,824 bicicletas y 692 estaciones. Su estratégia de marketing se ha basado en atraer diversos segmentos de consumidores a través de planes flexibles de precios, incluyendo pases de un solo viaje y membresías anuales. Los clientes que optan por pases ocasionales se denominan **usuarios ocasionales**, mientras aquellos clientes que cuentan con membresías anuales son considerados **miembros de Cyclistic**.
+Cyclistic es un programa de de **bicicletas compartidas** en Chicago que ha crecido desde 2016 hasta contar con 5,824 bicicletas y 692 estaciones. Su estratégia de marketing se ha basado en atraer diversos segmentos de consumidores a través de planes flexibles de precios, incluyendo pases de un solo viaje y membresías anuales. Los clientes que optan por pases ocasionales se denominan **usuarios casuales**, mientras aquellos clientes que cuentan con membresías anuales son considerados **miembros de Cyclistic**.
 
 Los analistas financieros que determinaros que los miembros de Cyclistic generan mayores beneficios que los ciclistas ocasionales. Por ello, la directora de marketing Lily Moreno, busca estrategias para convertir a más ciclistas ocasionales en miembros de Cyclistic. Para lograr este objetivo, es necesario estudiar las diferencias entre ambos grupos, los factores que motivan a los ciclistas ocasionales a adquirir una membresia y el impacto de los medios digitales en su decisión. 
 
@@ -20,9 +20,9 @@ Los analistas financieros que determinaros que los miembros de Cyclistic generan
 
 Las siguientes preguntas servirá como guia para desarrollar el proyecto.
 
-1. ¿En qué se diferencian los socios anuales y los ciclistas ocasionales con respecto al uso de las bicicletas de Cyclistic? 
+1. ¿En qué se diferencian los socios anuales y los usuarios ocasionales con respecto al uso del servicio de Cyclistic? 
 2. ¿Por qué los ciclistas ocasionales comprarían membresías anuales de Cyclistic? 
-3. ¿Cómo puede usar Cyclistic los medios digitales para influenciar a los ciclistas ocasionales a convertirse en miembros?
+3. ¿Cómo puede usar Cyclistic los medios digitales para influenciar a los usuarios a convertirse en miembros?
 
 ### Stakeholders o interesados en el proyecto.
 
@@ -61,9 +61,7 @@ Cada tabla contiene información sobre los viajes realizados por los usuarios, c
 Las herramientas que se utilizarán en los siguientes procesos son: 
 
 1. **Spreadsheet (Excel u hojas de cálculo de Google).** Para una inspección rápida de los datos antes del procesamiento y después de procesar, para garantizar la integridad de los datos.
-2. **R**. Para realizar los procesos de limpieza y procesamiento de datos.
-3. **Power BI**: Para realizar visualizaciones de los hallazgos.
-
+2. **R**. Para realizar los procesos de procesamiento de datos, limpieza de datos, y realizar visualizaciones para el análisis.
 ### 3.2 Exploración de los datos
 
 Para las doce tablas se verifico que todas contienen el mismo nombre en sus columnas. Esto fue verificado con el siguiente código:
@@ -141,7 +139,7 @@ Adicionalmente se agregó una columna llamada `ride_length` el cual indica la du
 #### 3.3.2 **Agregando datos faltantes**.
 
 En las columnas `start_station_name` y `end_station_name` se encontraron nombre vacíos, estos valores fueron llenados por el valor `unknown station`.
-#### 3.3.3 **Limpieza de datos.
+#### 3.3.3 Limpieza de datos.
 
 Al revisar la tabla, no se encontraron elementos repetidos ni elementos nulos. Además, se eliminaron las columnas que describen latitud y longitud de las estaciones de inicio y de termino.
 
@@ -158,6 +156,7 @@ Es evidente la presencia de outliers. Al revisar las estadísticas descriptivas 
 |     Mean      |    Median    |     Mode     |
 | :-----------: | :----------: | :----------: |
 | 17.31 minutos | 9.72 minutos | 4.87 minutos |
+
 Como se puede observar, hay una diferencia significativa entre estos valores.
 
 Por lo tanto, se ha decidido utilizar la técnica [IQR](https://en.wikipedia.org/wiki/Interquartile_range) para filtrar los outliers. Para esta técnica se realizó una ligera variación en la selección de $Q_1$, se tomó el valor $Q_1 = 1$. es decir, se descartaron aquellos viajes que duraron menos de un minuto. Al utilizar esta técnica nuestra distribución de los datos nos quedo de la siguiente forma
@@ -171,7 +170,6 @@ Ahora, notamos una mejor distribución de los valores de la columna `ride_length
 | 11.19 minutos | 9.18 minutos | 4.87 minutos |
 
 El código de todo el proceso de limpieza puede consultarse en [data_cleaning.R](./data_cleaning.R) 
-
 
 Después de haber realizado el proceso de limpieza nos hemos quedado con una tabla de 5,273,363 filas y 16 columnas
 
@@ -279,10 +277,12 @@ Después de revisar los resultados obtenidos tras el análisis de arriba, los si
    Cyclistic puede lanzar campañas personalizadas en redes sociales y correo electrónico, destacando los beneficios de la membresía anual. A través del *retargeting*, se pueden mostrar anuncios a usuarios casuales frecuentes con mensajes como:  
 		_"Ahorra en tus viajes y disfruta de trayectos ilimitados con la membresía Cyclistic."_
 
-
-
-
-
-
-
 ---
+
+
+<center>
+<h2 style = "#4e4e4e">
+¡Gracias por leer!
+</h2>
+</center>
+

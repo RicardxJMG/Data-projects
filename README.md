@@ -2,10 +2,20 @@
 
 ## Ciencia de datos.
 
-1. [Predicción de Cáncer de Pulmón.](./Data%20Science%20Projects/Cáncer%20de%20Pulmon/)
-2. [Segmentación de Clientes.](./Data%20Science%20Projects/Credit%20Card%20Clustering/)
+## [Predicción de Cáncer de Pulmón.](./Data%20Science%20Projects/Cáncer%20de%20Pulmon/)
+
+> Inserte descripción
+## [Segmentación de Clientes.](./Data%20Science%20Projects/Credit%20Card%20Clustering/)
+
+> Inserte descripción
 
 ## Análisis de datos.
 
-1. [Bellabeast - Caso de Estudio](./Data%20Analysis%20Projects/Bellabeat%20-%20Caso%20de%20estudio/)
-2. [Cyclistic - Estrategia](Projects/Data%20Projects/Portafolio/Data%20Analysis%20Projects/Cyclistic%20-%20Estrategia%20de%20marketing/)
+##  [Bellabeast - Caso de Estudio](./Data%20Analysis%20Projects/Bellabeat%20-%20Caso%20de%20estudio/)
+
+> Inserte breve descripción
+##  [Cyclistic - Estrategia de Marketing](./Data%20Analysis%20Projects/Cyclistic%20-%20Estrategia%20de%20marketing/)
+
+Este proyecto explora el uso de bicicletas compartidas de Cyclistic mediante el análisis de datos históricos.  Se examinan variables como la duración de los viajes, las horas y días de mayor actividad, y las diferencias estacionales en el comportamiento de los usuarios. Con base en estos hallazgos, se proponen estrategias orientadas a incentivar la conversión de usuarios ocasionales en miembros anuales, incluyendo promociones, pruebas gratuitas y campañas digitales.
+
+
