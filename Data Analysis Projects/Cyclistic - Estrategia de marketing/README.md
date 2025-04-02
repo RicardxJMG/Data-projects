@@ -64,9 +64,9 @@ Las herramientas que se utilizarán en los siguientes procesos son:
 2. **R**. Para realizar los procesos de limpieza y procesamiento de datos.
 3. **Power BI**: Para realizar visualizaciones de los hallazgos.
 
-### 3.2 Exploración de los datos[^1]
+### 3.2 Exploración de los datos
 
-Para las doce tablas se verifico que todas contienen el mismo nombre en sus columnas. Esto Fue verificado con el siguiente código[^2]:
+Para las doce tablas se verifico que todas contienen el mismo nombre en sus columnas. Esto fue verificado con el siguiente código:
 
 ```R
 tables_info = list()
@@ -126,7 +126,7 @@ Finalmente, verificamos los datos únicos las columnas `rideable_tipe` y `member
 | `rideable_type` | "electric_bike", "classic_bike" y "electric_scooter" |
 | `member_casual` | "member" y "casual"                                  |
 
-Por lo tanto, no es necesario realizar algún ajuste a dichas columnas.
+Por lo tanto, no es necesario realizar algún ajuste a dichas columnas. El proceso para verificar la integridad de los datos puede encontrase en [aqui](./data_integrity.R)
 ### 3.3 Limpieza y transformación de los datos
 
 Antes de realizar las respectivas modificaciones a la tabla `all_trips`, se trabajó sobre una copia llamada `all_trips_table` el cual es una versión mejorada de un *dataframe* y es proporcionada por la librería [data.table](https://cran.r-project.org/web/packages/data.table/).
@@ -182,13 +182,13 @@ Después de haber realizado el proceso de limpieza nos hemos quedado con una tab
 Los siguientes gráficos son los hallazgos que se encontraron en los datos.
 ### 4.1 Frecuencia de los usuarios
 
-![](cyclistic_analysis_plot_1.png.png)
+![](./plots/cyclistic_analysis_plot_1.png.png)
 
 > **Los usuarios *miembro* fueron los más abundantes durante el año 2024**
 
 ### 4.2 Transporte favorito de los usuarios
 
-![](cyclistic_analysis_plot_2.png)
+![](./plots/cyclistic_analysis_plot_2.png)
 
 Encontramos lo siguiente
 
@@ -205,7 +205,7 @@ El siguiente gráfico está divido en tres paneles que representan:
 3. El conteo diario de usuarios (líneas tenues), así como el promedio semanal de usuarios.  (líneas anchas) 
 
 
-![](cyclistic_analysis_plot_3.png)
+![](./plots/cyclistic_analysis_plot_3.png)
 
 De aqui podemos observar los siguiente:
 
@@ -223,7 +223,7 @@ De aqui podemos observar los siguiente:
 
 El siguiente grafico muestra como varia el tiempo medio del uso del servicio en una dia completo. El cálculo del tiempo medio a lo largo del día es obtenido tras segmentar al año por cuatro trimestres del año (T1, T2, T3 y T4), para observar con mejor claridad los patrones entre distintas temporadas.
 
-![](cyclistic_analysis_plot_4.png)
+![](./plots/cyclistic_analysis_plot_4.png)
 
 Tenemos las siguientes observaciones clave de este gráfico:
 
@@ -242,7 +242,7 @@ Tenemos las siguientes observaciones clave de este gráfico:
 
 El siguiente gráfico de calor muestra como varia el tiempo medio de uso de cada día de la semana durante cada mes del año 2024. Un color más claro indica mayor tiempo medio de uso, mientras que un color más oscuro indica menor tiempo medio de uso.
 
-![](cyclistic_analysis_plot_5.png)
+![](./plots/cyclistic_analysis_plot_5.png)
 
 De este gráfico tenemos las siguientes observaciones:
 
@@ -286,6 +286,3 @@ Después de revisar los resultados obtenidos tras el análisis de arriba, los si
 
 
 ---
-
-[^1]: El código completo de esta parte de la exploración puede consultarse [aquí](./data_integrity.R)
-[^2]: Solo se cargan tres filas de datos para no sobrecargar la tarea.
