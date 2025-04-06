@@ -4,10 +4,13 @@
 
 ## [Predicción de Cáncer de Pulmón.](./Data%20Science%20Projects/Cáncer%20de%20Pulmon/)
 
-> Inserte descripción
+Este proyecto explora la predicción de cáncer de pulmón mediante técnicas de clasificación de Machine Learning, utilizando un conjunto de datos con variables clínicas relevantes. Se realizaron análisis exploratorios para identificar patrones, se entrenaron distintos modelos de clasificación y se evaluó su desempeño. Los resultados destacan la importancia de ciertas características en la detección temprana, proporcionando insights valiosos para posibles aplicaciones en el ámbito médico.
 ## [Segmentación de Clientes.](./Data%20Science%20Projects/Credit%20Card%20Clustering/)
 
-> Inserte descripción
+El objetivo principal de este análisis es segmentar a los clientes de tarjetas de crédito en grupos significativos con base en su comportamiento financiero, y describir cada grupo para facilitar la toma de decisiones estratégicas dentro del negocio.
+
+
+---
 
 ## Análisis de datos.
 
