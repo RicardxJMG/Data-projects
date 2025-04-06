@@ -35,6 +35,7 @@ El análisis de clustering permitió segmentar a los clientes en 6 diferentes gr
 |    3    | Clientes con mayor cantidad de saldo y pagos equilibrados                                       |
 |    4    | Clientes con mayor pago mínimo. Compras relativamente altas, pero crédito limitado.             |
 |    5    | Clientes compradores frecuentes. *Perfil valioso*                                               |
+
 Debido a las características, el perfil más atractivo son aquellos que entran dentro del cluster 5, debido a que estos clientes:
 
 - Tienen mayor volumen de compras
