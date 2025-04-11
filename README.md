@@ -16,9 +16,17 @@ El objetivo principal de este análisis es segmentar a los clientes de tarjetas 
 
 ##  [Bellabeast - Caso de Estudio](./Data%20Analysis%20Projects/Bellabeat%20-%20Caso%20de%20estudio/)
 
-> Inserte breve descripción
-##  [Cyclistic - Estrategia de Marketing](./Data%20Analysis%20Projects/Cyclistic%20-%20Estrategia%20de%20marketing/)
+> Insert description
+## [Cyclistic - Estrategia de Marketing](./Data%20Analysis%20Projects/Cyclistic%20-%20Estrategia%20de%20marketing/)
 
 Este proyecto explora el uso de bicicletas compartidas de Cyclistic mediante el análisis de datos históricos.  Se examinan variables como la duración de los viajes, las horas y días de mayor actividad, y las diferencias estacionales en el comportamiento de los usuarios. Con base en estos hallazgos, se proponen estrategias orientadas a incentivar la conversión de usuarios ocasionales en miembros anuales, incluyendo promociones, pruebas gratuitas y campañas digitales.
 
 
+
+---
+
+## Business Intelligence
+
+## [Google Fiber Customer Service](./Data%20Business%20Intelligence/Google%20Fiber/)
+
+Este proyecto forma parte del programa _Google Business Intelligence Certificate_ y está completamente desarrollado en inglés. Simula un proceso de entrevista para una posición de analista BI en el centro de atención de Google Fiber. El objetivo es analizar tendencias en llamadas repetidas de clientes mediante un dashboard interactivo creado en Tableau. A partir de los datos del primer trimestre de 2022, se busca identificar qué tipos de problemas generan más llamadas repetidas, en qué mercados ocurren con mayor frecuencia y cómo se distribuyen a lo largo de los días de la semana.
