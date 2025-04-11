@@ -28,7 +28,7 @@ For more information on stakeholder needs, project requirements, and dashboard d
 
 ## Dashboard
 
-![](dashboard_image.png)
+![](./attachments/dashboard_image.png)
 
 Click [here](https://public.tableau.com/app/profile/ricardo.javier.martinez.garcia/viz/googlefiber_17441414533320/Dashboard1) to interact with the dashboard. 
 *Note*: The dataset is limited for the first quarter of 2022. 
