@@ -24,8 +24,12 @@ Este proyecto explora el uso de bicicletas compartidas de Cyclistic mediante el 
 
 ---
 
-## Business Intelligence
+## Dashboards & Business Intelligence
 
 ### [Google Fiber Customer Service](./Data%20Business%20Intelligence/Google%20Fiber/)
 
 Este proyecto forma parte del programa _Google Business Intelligence Certificate_ y está completamente desarrollado en inglés. Simula un proceso de entrevista para una posición de analista BI en el centro de atención de Google Fiber. El objetivo es analizar tendencias en llamadas repetidas de clientes mediante un dashboard interactivo creado en Tableau. A partir de los datos del primer trimestre de 2022, se busca identificar qué tipos de problemas generan más llamadas repetidas, en qué mercados ocurren con mayor frecuencia y cómo se distribuyen a lo largo de los días de la semana.
+
+### [Registro de armas en México](./Data%20Business%20Intelligence/Distribución%20%de%20%armas/)
+
+El objetivo de este proyecto es mostrar algunas 

@@ -1,0 +1,353 @@
+estado,trimestre,total,motivo_de_uso,tipo_de_arma,year
+aguascalientes,2do,0,protección_a_domicilio,cortas,2024
+baja california,2do,0,protección_a_domicilio,cortas,2024
+baja california  sur,2do,0,protección_a_domicilio,cortas,2024
+campeche,2do,1,protección_a_domicilio,cortas,2024
+chiapas,2do,0,protección_a_domicilio,cortas,2024
+chihuahua,2do,1,protección_a_domicilio,cortas,2024
+cd. mex,2do,0,protección_a_domicilio,cortas,2024
+coahuila,2do,2,protección_a_domicilio,cortas,2024
+colima,2do,0,protección_a_domicilio,cortas,2024
+durango,2do,0,protección_a_domicilio,cortas,2024
+edo. mex.,2do,44,protección_a_domicilio,cortas,2024
+guanajuato,2do,0,protección_a_domicilio,cortas,2024
+guerrero,2do,3,protección_a_domicilio,cortas,2024
+hidalgo,2do,0,protección_a_domicilio,cortas,2024
+jalisco,2do,0,protección_a_domicilio,cortas,2024
+michoacan,2do,3,protección_a_domicilio,cortas,2024
+morelos,2do,5,protección_a_domicilio,cortas,2024
+nayarit,2do,0,protección_a_domicilio,cortas,2024
+nuevo leon,2do,8,protección_a_domicilio,cortas,2024
+oaxaca,2do,1,protección_a_domicilio,cortas,2024
+puebla,2do,0,protección_a_domicilio,cortas,2024
+queretaro,2do,0,protección_a_domicilio,cortas,2024
+q. roo,2do,0,protección_a_domicilio,cortas,2024
+s.l.p.,2do,0,protección_a_domicilio,cortas,2024
+sinaloa,2do,1,protección_a_domicilio,cortas,2024
+sonora,2do,3,protección_a_domicilio,cortas,2024
+tabasco,2do,0,protección_a_domicilio,cortas,2024
+tamaulipas,2do,0,protección_a_domicilio,cortas,2024
+tlaxcala,2do,0,protección_a_domicilio,cortas,2024
+veracruz,2do,1,protección_a_domicilio,cortas,2024
+yucatan,2do,0,protección_a_domicilio,cortas,2024
+zacatecas,2do,0,protección_a_domicilio,cortas,2024
+aguascalientes,2do,0,tiro_deportivo,cortas,2024
+baja california,2do,5,tiro_deportivo,cortas,2024
+baja california  sur,2do,0,tiro_deportivo,cortas,2024
+campeche,2do,1,tiro_deportivo,cortas,2024
+chiapas,2do,0,tiro_deportivo,cortas,2024
+chihuahua,2do,1,tiro_deportivo,cortas,2024
+cd. mex,2do,0,tiro_deportivo,cortas,2024
+coahuila,2do,2,tiro_deportivo,cortas,2024
+colima,2do,5,tiro_deportivo,cortas,2024
+durango,2do,1,tiro_deportivo,cortas,2024
+edo. mex.,2do,336,tiro_deportivo,cortas,2024
+guanajuato,2do,6,tiro_deportivo,cortas,2024
+guerrero,2do,1,tiro_deportivo,cortas,2024
+hidalgo,2do,0,tiro_deportivo,cortas,2024
+jalisco,2do,16,tiro_deportivo,cortas,2024
+michoacan,2do,4,tiro_deportivo,cortas,2024
+morelos,2do,11,tiro_deportivo,cortas,2024
+nayarit,2do,0,tiro_deportivo,cortas,2024
+nuevo leon,2do,72,tiro_deportivo,cortas,2024
+oaxaca,2do,0,tiro_deportivo,cortas,2024
+puebla,2do,0,tiro_deportivo,cortas,2024
+queretaro,2do,1,tiro_deportivo,cortas,2024
+q. roo,2do,0,tiro_deportivo,cortas,2024
+s.l.p.,2do,0,tiro_deportivo,cortas,2024
+sinaloa,2do,7,tiro_deportivo,cortas,2024
+sonora,2do,3,tiro_deportivo,cortas,2024
+tabasco,2do,2,tiro_deportivo,cortas,2024
+tamaulipas,2do,2,tiro_deportivo,cortas,2024
+tlaxcala,2do,0,tiro_deportivo,cortas,2024
+veracruz,2do,2,tiro_deportivo,cortas,2024
+yucatan,2do,2,tiro_deportivo,cortas,2024
+zacatecas,2do,0,tiro_deportivo,cortas,2024
+aguascalientes,2do,0,tiro_deportivo,largas,2024
+baja california,2do,3,tiro_deportivo,largas,2024
+baja california  sur,2do,0,tiro_deportivo,largas,2024
+campeche,2do,6,tiro_deportivo,largas,2024
+chiapas,2do,8,tiro_deportivo,largas,2024
+chihuahua,2do,2,tiro_deportivo,largas,2024
+cd. mex,2do,0,tiro_deportivo,largas,2024
+coahuila,2do,1,tiro_deportivo,largas,2024
+colima,2do,4,tiro_deportivo,largas,2024
+durango,2do,0,tiro_deportivo,largas,2024
+edo. mex.,2do,242,tiro_deportivo,largas,2024
+guanajuato,2do,3,tiro_deportivo,largas,2024
+guerrero,2do,0,tiro_deportivo,largas,2024
+hidalgo,2do,0,tiro_deportivo,largas,2024
+jalisco,2do,33,tiro_deportivo,largas,2024
+michoacan,2do,6,tiro_deportivo,largas,2024
+morelos,2do,19,tiro_deportivo,largas,2024
+nayarit,2do,0,tiro_deportivo,largas,2024
+nuevo leon,2do,20,tiro_deportivo,largas,2024
+oaxaca,2do,0,tiro_deportivo,largas,2024
+puebla,2do,0,tiro_deportivo,largas,2024
+queretaro,2do,1,tiro_deportivo,largas,2024
+q. roo,2do,0,tiro_deportivo,largas,2024
+s.l.p.,2do,0,tiro_deportivo,largas,2024
+sinaloa,2do,0,tiro_deportivo,largas,2024
+sonora,2do,1,tiro_deportivo,largas,2024
+tabasco,2do,1,tiro_deportivo,largas,2024
+tamaulipas,2do,0,tiro_deportivo,largas,2024
+tlaxcala,2do,0,tiro_deportivo,largas,2024
+veracruz,2do,0,tiro_deportivo,largas,2024
+yucatan,2do,0,tiro_deportivo,largas,2024
+zacatecas,2do,0,tiro_deportivo,largas,2024
+aguascalientes,2do,0,cacería,cortas,2024
+baja california,2do,0,cacería,cortas,2024
+baja california  sur,2do,1,cacería,cortas,2024
+campeche,2do,0,cacería,cortas,2024
+chiapas,2do,0,cacería,cortas,2024
+chihuahua,2do,1,cacería,cortas,2024
+cd. mex,2do,0,cacería,cortas,2024
+coahuila,2do,8,cacería,cortas,2024
+colima,2do,3,cacería,cortas,2024
+durango,2do,3,cacería,cortas,2024
+edo. mex.,2do,24,cacería,cortas,2024
+guanajuato,2do,2,cacería,cortas,2024
+guerrero,2do,0,cacería,cortas,2024
+hidalgo,2do,0,cacería,cortas,2024
+jalisco,2do,2,cacería,cortas,2024
+michoacan,2do,11,cacería,cortas,2024
+morelos,2do,4,cacería,cortas,2024
+nayarit,2do,0,cacería,cortas,2024
+nuevo leon,2do,8,cacería,cortas,2024
+oaxaca,2do,0,cacería,cortas,2024
+puebla,2do,0,cacería,cortas,2024
+queretaro,2do,0,cacería,cortas,2024
+q. roo,2do,0,cacería,cortas,2024
+s.l.p.,2do,0,cacería,cortas,2024
+sinaloa,2do,5,cacería,cortas,2024
+sonora,2do,5,cacería,cortas,2024
+tabasco,2do,2,cacería,cortas,2024
+tamaulipas,2do,2,cacería,cortas,2024
+tlaxcala,2do,0,cacería,cortas,2024
+veracruz,2do,0,cacería,cortas,2024
+yucatan,2do,0,cacería,cortas,2024
+zacatecas,2do,1,cacería,cortas,2024
+aguascalientes,2do,2,cacería,largas,2024
+baja california,2do,1,cacería,largas,2024
+baja california  sur,2do,0,cacería,largas,2024
+campeche,2do,3,cacería,largas,2024
+chiapas,2do,0,cacería,largas,2024
+chihuahua,2do,17,cacería,largas,2024
+cd. mex,2do,0,cacería,largas,2024
+coahuila,2do,18,cacería,largas,2024
+colima,2do,2,cacería,largas,2024
+durango,2do,11,cacería,largas,2024
+edo. mex.,2do,168,cacería,largas,2024
+guanajuato,2do,12,cacería,largas,2024
+guerrero,2do,2,cacería,largas,2024
+hidalgo,2do,0,cacería,largas,2024
+jalisco,2do,6,cacería,largas,2024
+michoacan,2do,53,cacería,largas,2024
+morelos,2do,38,cacería,largas,2024
+nayarit,2do,1,cacería,largas,2024
+nuevo leon,2do,13,cacería,largas,2024
+oaxaca,2do,12,cacería,largas,2024
+puebla,2do,0,cacería,largas,2024
+queretaro,2do,4,cacería,largas,2024
+q. roo,2do,0,cacería,largas,2024
+s.l.p.,2do,1,cacería,largas,2024
+sinaloa,2do,23,cacería,largas,2024
+sonora,2do,17,cacería,largas,2024
+tabasco,2do,0,cacería,largas,2024
+tamaulipas,2do,13,cacería,largas,2024
+tlaxcala,2do,0,cacería,largas,2024
+veracruz,2do,20,cacería,largas,2024
+yucatan,2do,6,cacería,largas,2024
+zacatecas,2do,2,cacería,largas,2024
+aguascalientes,2do,0,personal_militar_en_activo,largas,2024
+baja california,2do,2,personal_militar_en_activo,largas,2024
+baja california  sur,2do,0,personal_militar_en_activo,largas,2024
+campeche,2do,1,personal_militar_en_activo,largas,2024
+chiapas,2do,0,personal_militar_en_activo,largas,2024
+chihuahua,2do,1,personal_militar_en_activo,largas,2024
+cd. mex,2do,0,personal_militar_en_activo,largas,2024
+coahuila,2do,1,personal_militar_en_activo,largas,2024
+colima,2do,0,personal_militar_en_activo,largas,2024
+durango,2do,0,personal_militar_en_activo,largas,2024
+edo. mex.,2do,307,personal_militar_en_activo,largas,2024
+guanajuato,2do,1,personal_militar_en_activo,largas,2024
+guerrero,2do,0,personal_militar_en_activo,largas,2024
+hidalgo,2do,0,personal_militar_en_activo,largas,2024
+jalisco,2do,0,personal_militar_en_activo,largas,2024
+michoacan,2do,1,personal_militar_en_activo,largas,2024
+morelos,2do,3,personal_militar_en_activo,largas,2024
+nayarit,2do,0,personal_militar_en_activo,largas,2024
+nuevo leon,2do,20,personal_militar_en_activo,largas,2024
+oaxaca,2do,0,personal_militar_en_activo,largas,2024
+puebla,2do,0,personal_militar_en_activo,largas,2024
+queretaro,2do,0,personal_militar_en_activo,largas,2024
+q. roo,2do,0,personal_militar_en_activo,largas,2024
+s.l.p.,2do,0,personal_militar_en_activo,largas,2024
+sinaloa,2do,1,personal_militar_en_activo,largas,2024
+sonora,2do,1,personal_militar_en_activo,largas,2024
+tabasco,2do,0,personal_militar_en_activo,largas,2024
+tamaulipas,2do,0,personal_militar_en_activo,largas,2024
+tlaxcala,2do,0,personal_militar_en_activo,largas,2024
+veracruz,2do,1,personal_militar_en_activo,largas,2024
+yucatan,2do,0,personal_militar_en_activo,largas,2024
+zacatecas,2do,0,personal_militar_en_activo,largas,2024
+aguascalientes,2do,0,personal_militar_en_activo,cortas,2024
+baja california,2do,1,personal_militar_en_activo,cortas,2024
+baja california  sur,2do,0,personal_militar_en_activo,cortas,2024
+campeche,2do,0,personal_militar_en_activo,cortas,2024
+chiapas,2do,0,personal_militar_en_activo,cortas,2024
+chihuahua,2do,0,personal_militar_en_activo,cortas,2024
+cd. mex,2do,0,personal_militar_en_activo,cortas,2024
+coahuila,2do,0,personal_militar_en_activo,cortas,2024
+colima,2do,0,personal_militar_en_activo,cortas,2024
+durango,2do,0,personal_militar_en_activo,cortas,2024
+edo. mex.,2do,75,personal_militar_en_activo,cortas,2024
+guanajuato,2do,0,personal_militar_en_activo,cortas,2024
+guerrero,2do,0,personal_militar_en_activo,cortas,2024
+hidalgo,2do,0,personal_militar_en_activo,cortas,2024
+jalisco,2do,1,personal_militar_en_activo,cortas,2024
+michoacan,2do,1,personal_militar_en_activo,cortas,2024
+morelos,2do,0,personal_militar_en_activo,cortas,2024
+nayarit,2do,0,personal_militar_en_activo,cortas,2024
+nuevo leon,2do,3,personal_militar_en_activo,cortas,2024
+oaxaca,2do,0,personal_militar_en_activo,cortas,2024
+puebla,2do,0,personal_militar_en_activo,cortas,2024
+queretaro,2do,0,personal_militar_en_activo,cortas,2024
+q. roo,2do,0,personal_militar_en_activo,cortas,2024
+s.l.p.,2do,0,personal_militar_en_activo,cortas,2024
+sinaloa,2do,0,personal_militar_en_activo,cortas,2024
+sonora,2do,1,personal_militar_en_activo,cortas,2024
+tabasco,2do,0,personal_militar_en_activo,cortas,2024
+tamaulipas,2do,0,personal_militar_en_activo,cortas,2024
+tlaxcala,2do,0,personal_militar_en_activo,cortas,2024
+veracruz,2do,2,personal_militar_en_activo,cortas,2024
+yucatan,2do,0,personal_militar_en_activo,cortas,2024
+zacatecas,2do,0,personal_militar_en_activo,cortas,2024
+aguascalientes,2do,0,protección_a_parcela,cortas,2024
+baja california,2do,0,protección_a_parcela,cortas,2024
+baja california  sur,2do,1,protección_a_parcela,cortas,2024
+campeche,2do,0,protección_a_parcela,cortas,2024
+chiapas,2do,0,protección_a_parcela,cortas,2024
+chihuahua,2do,0,protección_a_parcela,cortas,2024
+cd. mex,2do,0,protección_a_parcela,cortas,2024
+coahuila,2do,0,protección_a_parcela,cortas,2024
+colima,2do,0,protección_a_parcela,cortas,2024
+durango,2do,0,protección_a_parcela,cortas,2024
+edo. mex.,2do,1,protección_a_parcela,cortas,2024
+guanajuato,2do,1,protección_a_parcela,cortas,2024
+guerrero,2do,2,protección_a_parcela,cortas,2024
+hidalgo,2do,0,protección_a_parcela,cortas,2024
+jalisco,2do,0,protección_a_parcela,cortas,2024
+michoacan,2do,0,protección_a_parcela,cortas,2024
+morelos,2do,0,protección_a_parcela,cortas,2024
+nayarit,2do,0,protección_a_parcela,cortas,2024
+nuevo leon,2do,0,protección_a_parcela,cortas,2024
+oaxaca,2do,0,protección_a_parcela,cortas,2024
+puebla,2do,0,protección_a_parcela,cortas,2024
+queretaro,2do,0,protección_a_parcela,cortas,2024
+q. roo,2do,0,protección_a_parcela,cortas,2024
+s.l.p.,2do,0,protección_a_parcela,cortas,2024
+sinaloa,2do,0,protección_a_parcela,cortas,2024
+sonora,2do,0,protección_a_parcela,cortas,2024
+tabasco,2do,0,protección_a_parcela,cortas,2024
+tamaulipas,2do,0,protección_a_parcela,cortas,2024
+tlaxcala,2do,0,protección_a_parcela,cortas,2024
+veracruz,2do,0,protección_a_parcela,cortas,2024
+yucatan,2do,0,protección_a_parcela,cortas,2024
+zacatecas,2do,0,protección_a_parcela,cortas,2024
+aguascalientes,2do,0,protección_a_parcela,largas,2024
+baja california,2do,0,protección_a_parcela,largas,2024
+baja california  sur,2do,0,protección_a_parcela,largas,2024
+campeche,2do,2,protección_a_parcela,largas,2024
+chiapas,2do,0,protección_a_parcela,largas,2024
+chihuahua,2do,1,protección_a_parcela,largas,2024
+cd. mex,2do,0,protección_a_parcela,largas,2024
+coahuila,2do,0,protección_a_parcela,largas,2024
+colima,2do,0,protección_a_parcela,largas,2024
+durango,2do,0,protección_a_parcela,largas,2024
+edo. mex.,2do,5,protección_a_parcela,largas,2024
+guanajuato,2do,0,protección_a_parcela,largas,2024
+guerrero,2do,4,protección_a_parcela,largas,2024
+hidalgo,2do,0,protección_a_parcela,largas,2024
+jalisco,2do,0,protección_a_parcela,largas,2024
+michoacan,2do,1,protección_a_parcela,largas,2024
+morelos,2do,3,protección_a_parcela,largas,2024
+nayarit,2do,0,protección_a_parcela,largas,2024
+nuevo leon,2do,0,protección_a_parcela,largas,2024
+oaxaca,2do,2,protección_a_parcela,largas,2024
+puebla,2do,0,protección_a_parcela,largas,2024
+queretaro,2do,0,protección_a_parcela,largas,2024
+q. roo,2do,0,protección_a_parcela,largas,2024
+s.l.p.,2do,0,protección_a_parcela,largas,2024
+sinaloa,2do,4,protección_a_parcela,largas,2024
+sonora,2do,0,protección_a_parcela,largas,2024
+tabasco,2do,0,protección_a_parcela,largas,2024
+tamaulipas,2do,0,protección_a_parcela,largas,2024
+tlaxcala,2do,0,protección_a_parcela,largas,2024
+veracruz,2do,0,protección_a_parcela,largas,2024
+yucatan,2do,6,protección_a_parcela,largas,2024
+zacatecas,2do,0,protección_a_parcela,largas,2024
+aguascalientes,2do,0,colección,cortas,2024
+baja california,2do,0,colección,cortas,2024
+baja california  sur,2do,0,colección,cortas,2024
+campeche,2do,0,colección,cortas,2024
+chiapas,2do,0,colección,cortas,2024
+chihuahua,2do,0,colección,cortas,2024
+cd. mex,2do,0,colección,cortas,2024
+coahuila,2do,0,colección,cortas,2024
+colima,2do,0,colección,cortas,2024
+durango,2do,0,colección,cortas,2024
+edo. mex.,2do,12,colección,cortas,2024
+guanajuato,2do,0,colección,cortas,2024
+guerrero,2do,0,colección,cortas,2024
+hidalgo,2do,0,colección,cortas,2024
+jalisco,2do,0,colección,cortas,2024
+michoacan,2do,0,colección,cortas,2024
+morelos,2do,0,colección,cortas,2024
+nayarit,2do,0,colección,cortas,2024
+nuevo leon,2do,0,colección,cortas,2024
+oaxaca,2do,0,colección,cortas,2024
+puebla,2do,0,colección,cortas,2024
+queretaro,2do,0,colección,cortas,2024
+q. roo,2do,0,colección,cortas,2024
+s.l.p.,2do,0,colección,cortas,2024
+sinaloa,2do,0,colección,cortas,2024
+sonora,2do,0,colección,cortas,2024
+tabasco,2do,0,colección,cortas,2024
+tamaulipas,2do,0,colección,cortas,2024
+tlaxcala,2do,0,colección,cortas,2024
+veracruz,2do,0,colección,cortas,2024
+yucatan,2do,0,colección,cortas,2024
+zacatecas,2do,0,colección,cortas,2024
+aguascalientes,2do,0,colección,largas,2024
+baja california,2do,0,colección,largas,2024
+baja california  sur,2do,0,colección,largas,2024
+campeche,2do,0,colección,largas,2024
+chiapas,2do,0,colección,largas,2024
+chihuahua,2do,0,colección,largas,2024
+cd. mex,2do,0,colección,largas,2024
+coahuila,2do,0,colección,largas,2024
+colima,2do,0,colección,largas,2024
+durango,2do,0,colección,largas,2024
+edo. mex.,2do,4,colección,largas,2024
+guanajuato,2do,0,colección,largas,2024
+guerrero,2do,0,colección,largas,2024
+hidalgo,2do,0,colección,largas,2024
+jalisco,2do,0,colección,largas,2024
+michoacan,2do,0,colección,largas,2024
+morelos,2do,0,colección,largas,2024
+nayarit,2do,0,colección,largas,2024
+nuevo leon,2do,0,colección,largas,2024
+oaxaca,2do,0,colección,largas,2024
+puebla,2do,0,colección,largas,2024
+queretaro,2do,0,colección,largas,2024
+q. roo,2do,0,colección,largas,2024
+s.l.p.,2do,0,colección,largas,2024
+sinaloa,2do,0,colección,largas,2024
+sonora,2do,0,colección,largas,2024
+tabasco,2do,0,colección,largas,2024
+tamaulipas,2do,0,colección,largas,2024
+tlaxcala,2do,0,colección,largas,2024
+veracruz,2do,0,colección,largas,2024
+yucatan,2do,0,colección,largas,2024
+zacatecas,2do,0,colección,largas,2024
