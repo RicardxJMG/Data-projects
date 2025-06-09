@@ -33,7 +33,10 @@ Las siguientes imágenes son una vista previa del dashboard.
 Para poder interactuar con el dashboard clona esta carpeta de este repositorio con el siguiente comando:
 
 ```bash
-git clone carpeta
+git clone --filter=blob:none --no-checkout https://github.com/RicardxJMG/Data-projects.git
+cd Data-projects
+git sparse-checkout init --cone
+git sparse-checkout set "Data Business Intelligence/Registro de armas"
 ```
 
 Con este dashboard se pueden responder fácilmente las preguntas planteadas al inicio:
