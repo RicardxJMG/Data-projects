@@ -26,9 +26,9 @@ Este proyecto busca responder las siguientes preguntas:
 
 Las siguientes imágenes son una vista previa del dashboard.
 
-![[Pasted image 20250609033330.png]]
+![](./img/Pasted%20image%2020250609033330.png)
 
-![[Pasted image 20250609033416.png]]
+![](./img/Pasted%20image%2020250609033416.png)
 
 Para poder interactuar con el dashboard clona esta carpeta de este repositorio con el siguiente comando:
 
