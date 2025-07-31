@@ -36,6 +36,6 @@ Este proyecto explora el uso de bicicletas compartidas de Cyclistic mediante el 
 
 Este proyecto forma parte del programa _Google Business Intelligence Certificate_ y está completamente desarrollado en inglés. Simula un proceso de entrevista para una posición de analista BI en el centro de atención de Google Fiber. El objetivo es analizar tendencias en llamadas repetidas de clientes mediante un dashboard interactivo creado en Tableau. A partir de los datos del primer trimestre de 2022, se busca identificar qué tipos de problemas generan más llamadas repetidas, en qué mercados ocurren con mayor frecuencia y cómo se distribuyen a lo largo de los días de la semana.
 
-### [Registro de armas en México](./Data%20Business%20Intelligence/Registro%20%de%20%armas/)
+### [Registro de armas en México](./Data%20Business%20Intelligence/Registro%20de%20armas)
 
 Este proyecto muestra la distribución del conteo de armas registradas en México durante el año 2024, segmentado por entidad federativa, tipo de arma y motivo de registro. A través de visualizaciones interactivas, se busca identificar los estados con mayor número de registros, el motivo de uso más frecuente y las tendencias por trimestre. Los datos provienen de registros públicos de la SEDENA y se limitan, por el momento, a los trimestres completos disponibles del año 2024. Este análisis busca apoyar la comprensión de los patrones geográficos y sociales relacionados con el registro de armas de fuego en el país.
