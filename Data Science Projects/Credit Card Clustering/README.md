@@ -1,4 +1,4 @@
-# Segmentación de Clientes de Tarjetas de Crédito
+# Segmentación de Clientes Financieros con Machine Learning
 
 ## Objetivo del Proyecto
 
