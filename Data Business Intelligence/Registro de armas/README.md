@@ -1,4 +1,4 @@
-# Registro de armas de fuego por diferentes motivos en México
+# Análisis de Armas y Motivos de Uso (SEDENA, 2024)
 
 Este proyecto analiza la cantidad de registros de armas de fuego en México durante los cuatro trimestres del año 2024. Se construyó un dashboard interactivo que permite explorar la distribución geográfica, el motivo de registro y las características de las armas registradas, con el objetivo de identificar patrones relevantes para el análisis social y de seguridad.
 
