@@ -11,7 +11,7 @@ Este proyecto explora la predicción de cáncer de pulmón mediante técnicas de
 
 El objetivo principal de este análisis es segmentar a los clientes de tarjetas de crédito en grupos significativos con base en su comportamiento financiero, y describir cada grupo para facilitar la toma de decisiones estratégicas dentro del negocio. Para ello se utilizó herramientas de aprendizaje no supervisado como PCA para reducción de dimensionalidad K-Means, para lograr segmentar los clientes. Con estas herramientas fue posible segmentar a la clientes en cuatro grupos con características significativas.
 
-## [Clasificación de Riesgo Crediticio](./Data%20Science%20Projects/Credit%20Granting/)
+### [Clasificación de Riesgo Crediticio](./Data%20Science%20Projects/Credit%20Granting/)
 
 En este proyecto se aplicaron técnicas de aprendizaje no supervisado (KMeans, DBSCAN) y supervisado (Regresión Logística, Random Forest) para analizar el comportamiento financiero de clientes que solicitan crédito bancario. El objetivo principal es clasificar a los solicitantes en buenos y malos pagadores minimizando el riesgo crediticio, considerando que aprobar un crédito a un mal cliente tiene un costo cinco veces mayor que rechazar incorrectamente a un buen cliente.
 ## Análisis de datos.
