@@ -6,7 +6,7 @@ Análisis del histórico de viajes de 2024 de **Cyclistic** (programa de bicicle
 
 - **Datos:** 12 archivos `csv` de 2024 (5,860,568 viajes), que quedaron en 5,273,363 viajes tras la limpieza. Procesados con **R**.
 - **Hallazgos:** los miembros son mayoría en todos los meses. Los usuarios casuales tienen un mayor tiempo medio de uso, concentrado en fines de semana y en primavera-verano, lo que sugiere un uso recreativo; los miembros tienen un uso más constante, lo que sugiere un uso como parte de su rutina diaria.
-- **Recomendaciones:** cinco estrategias: descuentos en el primer trimestre, acceso temporal a funciones de miembro, sistema de puntos, eventos exclusivos para miembros y estrategia digital con retargeting.
+- **Recomendaciones:** cinco estrategias: incentivar descuentos a finales del primer trimestre, acceso temporal a funciones de miembro, sistema de puntos, eventos exclusivos para miembros y estrategia digital con retargeting.
 
 ![](./plots/cyclistic_analysis_plot_5.png)
 
