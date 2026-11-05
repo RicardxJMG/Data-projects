@@ -1,20 +1,41 @@
 # Segmentación de Clientes Financieros con Machine Learning
 
-## Objetivo del Proyecto
+## Resumen
 
-El objetivo principal de este proyecto es segmentar a los clientes de tarjetas de crédito en grupos diferenciados basados en su comportamiento financiero, para facilitar decisiones estratégicas como campañas de marketing personalizadas, optimización de productos financieros y gestión de riesgos.
+Se segmentó a los clientes de tarjetas de crédito en **4 grupos** según su comportamiento financiero, usando PCA (6 componentes, más del 75% de la varianza explicada) y K-Means. Los grupos resultantes son:
 
-## Descripción
-
-Este proyecto aplica técnicas de aprendizaje no supervisado para analizar el comportamiento de los clientes de tarjetas de crédito. Se realizaron varias etapas de preprocesamiento de los datos, incluyendo corrección de valores inconsistentes, estandarización y reducción de dimensionalidad mediante Análisis de Componentes Principales (PCA), conservando más del 75% de la varianza explicada con seis componentes principales.
-
-Posteriormente, se aplicó el algoritmo K-Means para segmentar a los clientes en cuatro grupos distintos. El número óptimo de clusters se determinó utilizando métricas de validación como Inertia, Silhouette Score, Davies-Bouldin Index y Calinski-Harabasz Score.
+- **Clientes básicos** (43.9%): saldo bajo, poca actividad de compra y alta dependencia de pagos mínimos.
+- **Clientes responsables** (36.3%): alto volumen de compras, preferencia por compras a plazos y buen historial de pagos.
+- **Altos saldos y adelantos** (15.6%): saldo alto, uso intensivo de adelantos de efectivo.
+- **Clientes premium o destacados** (4.1%): compras de alto valor y excelente cumplimiento de pagos.
 
 ---
 
-## Resultados y Conclusiones
+## Contexto y pregunta de negocio
 
-El análisis de clustering permitió segmentar a los clientes en 4 diferentes grupos según su comportamiento con el uso de tarjeta de crédito. Los clusters quedaron de la siguiente manera:
+El objetivo principal de este proyecto es segmentar a los clientes de tarjetas de crédito en grupos diferenciados basados en su comportamiento financiero, para facilitar decisiones estratégicas como campañas de marketing personalizadas, optimización de productos financieros y gestión de riesgos.
+
+---
+
+## Datos y diccionario
+
+El análisis se realiza sobre datos de comportamiento de clientes de tarjetas de crédito.
+
+---
+
+## Metodología y decisiones
+
+Se aplicaron técnicas de aprendizaje no supervisado en las siguientes etapas:
+
+1. **Preprocesamiento**: corrección de valores inconsistentes y estandarización de las variables.
+2. **Reducción de dimensionalidad con PCA**: se conservaron seis componentes principales, que explican más del 75% de la varianza.
+3. **Segmentación con K-Means**: el número óptimo de clusters (4) se determinó con las métricas de validación Inertia, Silhouette Score, Davies-Bouldin Index y Calinski-Harabasz Score.
+
+---
+
+## Resultados
+
+El análisis de clustering permitió segmentar a los clientes en 4 grupos según su comportamiento con el uso de tarjeta de crédito:
 
 | Cluster | Tipo de cliente                     | Descripción                                                                                                                                     |
 |:-------:|:------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -25,8 +46,14 @@ El análisis de clustering permitió segmentar a los clientes en 4 diferentes gr
 
 ---
 
-## Áreas de mejora
+## Limitaciones y siguientes pasos
 
-- **Comparación con otros algoritmos**: Evaluar el desempeño de modelos alternativos como DBSCAN, clustering jerárquico o Gaussian Mixture Models para validar o mejorar la segmentación actual.
-- **Análisis más profundo de los perfiles**: Incorporar nuevas métricas o explorar relaciones entre variables que permitan caracterizar con mayor detalle a cada grupo.
-- **Implementación de recomendaciones accionables**: Traducir los resultados en estrategias concretas de retención, fidelización o personalización de productos financieros por tipo de cliente.
+### Limitaciones
+
+- Con seis componentes principales se conserva más del 75% de la varianza explicada; el resto de la varianza no está representada en la segmentación.
+
+### Siguientes pasos
+
+- **Comparación con otros algoritmos**: evaluar el desempeño de modelos alternativos como DBSCAN, clustering jerárquico o Gaussian Mixture Models para validar o mejorar la segmentación actual.
+- **Análisis más profundo de los perfiles**: incorporar nuevas métricas o explorar relaciones entre variables que permitan caracterizar con mayor detalle a cada grupo.
+- **Implementación de recomendaciones accionables**: traducir los resultados en estrategias concretas de retención, fidelización o personalización de productos financieros por tipo de cliente.
